@@ -1,22 +1,10 @@
 """
-problem.py - Problem formulation and map handling.
+problem.py - for map handling.
 
 This file describes the campus delivery problem (states, actions, transition
 model, goal test and path cost). It knows nothing about the search algorithms,
 which live in algorithms.py.
 
-Problem formulation
--------------------
-State            : (row, column) of the robot, counted from 0 at the top-left.
-Initial state    : the cell marked S.
-Actions          : Up, Down, Left, Right (always generated in this order).
-Transition model : the robot moves one cell; moving into an obstacle (X) or
-                   off the map is not allowed.
-Goal test        : the robot is on the cell marked G.
-Path cost        : the sum of the cost of ENTERING each cell on the route.
-                   The starting cell contributes zero.
-                   1 = normal walkway, 3 = crowded walkway,
-                   5 = difficult terrain, S and G cost 1.
 """
 from pathlib import Path
 
