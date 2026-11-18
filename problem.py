@@ -1,8 +1,5 @@
 """
-problem.py - for map handling.
-
-This file describes the campus delivery problem (states, actions, transition
-model, goal test and path cost).
+This section is for map handling.
 
 """
 from pathlib import Path

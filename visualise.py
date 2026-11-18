@@ -1,8 +1,5 @@
 """
-visualise.py - Static plot of the map, start, goal and returned route.
-
-Matplotlib is only needed for this file. If it is not installed, the search
-and the experiments still work; only the plots are skipped.
+This section only for plot creation based on the result produced
 """
 
 

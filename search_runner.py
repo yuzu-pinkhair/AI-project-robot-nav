@@ -1,6 +1,6 @@
 import sys
 
-if sys.version_info < (3, 10):
+if sys.version_info < (3, 10): #this part is for python requirement check
     sys.exit("Python 3.10 or newer is required.")
 
 import argparse

@@ -1,5 +1,6 @@
 """
-Correctness checks. Run with:   python -m unittest -v
+This section is to check if it run according to the rules. 
+
 """
 import tempfile
 import unittest

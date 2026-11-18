@@ -1,23 +1,7 @@
-"""
-experiment_runner.py - Run the experiments for Task B and Task C.
-
-Task B (default): BFS, UCS, Greedy and A* (Manhattan) on map1.txt ... map6.txt.
-Task C (--heuristic-comparison): A* with h(n) = 0 and A* with Manhattan on the six maps.
-
-Examples:
-    python experiment_runner.py --repeats 5 --output results.csv
-    python experiment_runner.py --repeats 5 --heuristic-comparison --output heuristic_results.csv
-    python experiment_runner.py --repeats 5 --output results.csv --plots-dir plots
-
-Files written (OUTPUT = the --output name, e.g. results.csv):
-    OUTPUT                 one row per map and algorithm (median runtime)
-    OUTPUT_raw.csv         one row for EVERY repeat (raw measurements)
-    OUTPUT_environment.txt Python version, operating system and settings
-"""
 import sys
 
 if sys.version_info < (3, 10):
-    sys.exit("Python 3.10 or newer is required.")
+    sys.exit("Python 3.10 or newer is required.") #for python version check
 
 import argparse
 import csv
@@ -182,7 +166,7 @@ def main(argv=None):
               f"{row['peak_frontier']:>5} {row['runtime_median_ms']:>10}")
     print(f"\nSaved: {output}  |  {raw_path}  |  {env_path}")
 
-    # ---- optional route pictures (not part of the timing) ----
+    # --------- optional route diagram for visualisation of data  ----------
     if args.plots_dir:
         try:
             from visualise import plot_route
