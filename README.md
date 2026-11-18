@@ -66,7 +66,7 @@ Optional: also save a route picture for every run:
 python experiment_runner.py --repeats 5 --output results.csv --plots-dir plots
 ```
 
-### Output files (in the folder where you run the command)
+### Output files (the located folder where you run the command)
 
 | File | Content |
 |---|---|
@@ -77,21 +77,20 @@ python experiment_runner.py --repeats 5 --output results.csv --plots-dir plots
 
 The same three files, with the chosen name, are written for the heuristic comparison.
 
-## Conventions followed (Appendix A)
+## The Rules followed
 
-- Maps are read in the Appendix A.1 format. S and G cost 1 to enter; a move costs the cost of the
+- Maps are read with the format. S and G cost 1 to enter; a move costs the cost of the
   cell entered; the starting cell contributes zero.
-- All four algorithms follow the graph-search procedure of A.2 (tree search plus a closed set),
-  with successors generated in the order Up, Down, Left, Right.
-- Ties are broken by removing the node that was inserted earliest.
+- All four algorithms follow the graph-search procedure (tree search plus a closed set),
+  with successors in the order Up, Down, Left, Right.
+- Connection are broken when removing the node that was inserted earliest.
 - Nodes expanded = nodes added to the closed set. Peak frontier size = largest number of
   nodes in the frontier at any point, including nodes later skipped.
 - Runtime is the median of the repeats. Only the search call is timed (map loading,
   route validation and plotting are excluded).
 - Every returned route is checked by an independent validator (correct start and goal, legal moves,
   no obstacles, cost recalculated from the map).
-- Resource limit: 1,000,000 expanded nodes per run (`--max-expanded`). It was never reached.
-- Departures from the conventions: none.
+- Resource limit: 1,000,000 expanded nodes per run for more consistent result (`--max-expanded`).
 
 ## Check the code
 
