@@ -79,8 +79,8 @@ The same three files, with the chosen name, are written for the heuristic compar
 
 ## The Rules followed
 
-- Maps are read with the format. S and G cost 1 to enter; a move costs the cost of the
-  cell entered; the starting cell contributes zero.
+- Maps are read withint the format. S and G cost 1 to enter; a move costs the cost of the
+  cell entered; the starting cell contributes 0.
 - All four algorithms follow the graph-search procedure (tree search plus a closed set),
   with successors in the order Up, Down, Left, Right.
 - Connection are broken when removing the node that was inserted earliest.
