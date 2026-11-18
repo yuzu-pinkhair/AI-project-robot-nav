@@ -1,12 +1,3 @@
-"""
-search_runner.py - Run ONE algorithm on ONE map.
-
-Examples:
-    python search_runner.py --algo bfs --map maps/map1.txt
-    python search_runner.py --algo astar --map maps/map4.txt --heuristic manhattan
-    python search_runner.py --algo astar --map maps/map4.txt --heuristic zero
-    python search_runner.py --algo greedy --map maps/map5.txt --plot route.png
-"""
 import sys
 
 if sys.version_info < (3, 10):

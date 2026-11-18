@@ -2,8 +2,7 @@
 problem.py - for map handling.
 
 This file describes the campus delivery problem (states, actions, transition
-model, goal test and path cost). It knows nothing about the search algorithms,
-which live in algorithms.py.
+model, goal test and path cost).
 
 """
 from pathlib import Path
@@ -17,11 +16,11 @@ VALID_SYMBOLS = set(CELL_COST) | {"X"}
 
 
 class MapError(ValueError):
-    """Raised when a map file cannot be read or is not a valid map."""
+    """Error action when a map file cannot be read or it is not a valid map."""
 
 
 class RouteError(ValueError):
-    """Raised when a returned route breaks the movement rules."""
+    """This happen when returned value breaks the route movement rules."""
 
 
 def validate_grid(grid):
@@ -98,13 +97,8 @@ class GridProblem:
                 yield name, next_state, self.step_cost(next_state)
 
 
-def route_cost(problem, path):
-    """Validate a route and return its total cost.
+def route_cost(problem, path): #validate a route and return its total cost
 
-    Checks that the route starts at S, ends at G, moves one cell at a time
-    (up, down, left or right) and never enters an obstacle. The cost is
-    recalculated from the map, so it does not depend on the search code.
-    """
     if not path:
         raise RouteError("The route is empty.")
     if path[0] != problem.start:

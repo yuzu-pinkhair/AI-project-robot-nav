@@ -1,5 +1,3 @@
-# Only needed for the route pictures (visualise.py). The searches and the
-# experiments run without it.
-# Before submitting, replace ">=3.7" with the exact version you used:
+# This section is pre-requirements make a visual picture on 'visualise.py'file
 #   python -m pip show matplotlib
 matplotlib>=3.7
