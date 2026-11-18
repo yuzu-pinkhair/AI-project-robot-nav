@@ -4,7 +4,7 @@ This section is for map handling.
 """
 from pathlib import Path
 
-# Appendix A.2: successors are generated in the fixed order Up, Down, Left, Right.
+# The actions in fixed order Up, Down, Left, Right.
 ACTIONS = (("Up", -1, 0), ("Down", 1, 0), ("Left", 0, -1), ("Right", 0, 1))
 
 # Cost of entering a cell. S and G are normal walkway cells (cost 1).
