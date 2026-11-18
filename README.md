@@ -7,7 +7,7 @@ Students: **[Mohamad Irman bin Bally, 105019]**, **[Muhammad Asyraf bin Ismawi, 
 
 - Python version: **[Python 3.15.2]**
 - Operating system: **[Windows 11]**
-- Third-party package: `matplotlib` (for plots), see `requirements.txt`
+- Third-party package: `matplotlib` (for plots), see `requirements.txt` to install.
 - No internet connection is needed to run the program.
 
 ## Files
