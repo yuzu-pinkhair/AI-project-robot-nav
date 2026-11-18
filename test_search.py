@@ -13,7 +13,7 @@ from problem import GridProblem, MapError, RouteError, load_map, route_cost
 HERE = Path(__file__).parent
 MAPS_DIR = HERE / "maps" if (HERE / "maps").is_dir() else HERE
 
-# Start and goal of the six maps, from Appendix A.3 of the brief.
+# Start and goal of the six maps
 START_GOAL = {1: ((0, 0), (4, 4)), 2: ((0, 0), (9, 9)), 3: ((0, 0), (8, 10)),
               4: ((2, 0), (2, 8)), 5: ((0, 0), (7, 9)), 6: ((0, 0), (4, 4))}
 
