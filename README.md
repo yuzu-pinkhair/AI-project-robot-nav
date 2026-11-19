@@ -1,6 +1,6 @@
 # TMN3233 Assignment - Campus Delivery Robot Search 
 
-Pair Group: **[Group 20]**
+Pair Group: **[Group 30]**
 Students: **[Mohamad Irman bin Bally, 105019]**, **[Muhammad Asyraf bin Ismawi, 102726]**
 
 ## Environment
